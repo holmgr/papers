@@ -1,0 +1,13 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Background}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Software Metrics}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Adapter Design Pattern}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Rust}{section.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Traits}{subsection.2.3}% 6
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Polymorphism}{subsection.2.3}% 7
+\BOOKMARK [1][-]{section.3}{Implementation}{}% 8
+\BOOKMARK [2][-]{subsection.3.1}{Java}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.2}{Rust}{section.3}% 10
+\BOOKMARK [1][-]{section.4}{Results}{}% 11
+\BOOKMARK [1][-]{section.5}{Discussion}{}% 12
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 13

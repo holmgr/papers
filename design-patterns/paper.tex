@@ -1,0 +1,238 @@
+\documentclass[conference]{IEEEtran}
+% Some Computer Society conferences also require the compsoc mode option,
+% but others use the standard conference format.
+%
+% If IEEEtran.cls has not been installed into the LaTeX system files,
+% manually specify the path to it like:
+%\documentclass[conference]{IEEEtran}
+
+\usepackage[numbers]{natbib}
+\usepackage{listings}
+\lstset{breaklines}
+\usepackage{hyperref}
+
+%% Set up autoref with swedish
+\renewcommand{\sectionautorefname}{Section}
+\renewcommand{\subsectionautorefname}{Section}
+\renewcommand{\subsubsectionautorefname}{Section}
+
+% *** CITATION PACKAGES ***
+%
+%\usepackage{cite}
+% cite.sty was written by Donald Arseneau
+% V1.6 and later of IEEEtran pre-defines the format of the cite.sty package
+% \cite{} output to follow that of the IEEE. Loading the cite package will
+% result in citation numbers being automatically sorted and properly
+% "compressed/ranged". e.g., [1], [9], [2], [7], [5], [6] without using
+% cite.sty will become [1], [2], [5]--[7], [9] using cite.sty. cite.sty's
+% \cite will automatically add leading space, if needed. Use cite.sty's
+% noadjust option (cite.sty V3.8 and later) if you want to turn this off
+% such as if a citation ever needs to be enclosed in parenthesis.
+% cite.sty is already installed on most LaTeX systems. Be sure and use
+% version 5.0 (2009-03-20) and later if using hyperref.sty.
+% The latest version can be obtained at:
+% http://www.ctan.org/pkg/cite
+% The documentation is contained in the cite.sty file itself.
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+
+\begin{document}
+%
+% paper title
+% Titles are generally capitalized except for words such as a, an, and, as,
+% at, but, by, for, in, nor, of, on, or, the, to and up, which are usually
+% not capitalized unless they are the first or last word of the title.
+% Linebreaks \\ can be used within to get better formatting as desired.
+% Do not put math or special symbols in the title.
+\title{How does the implementation of the Adapter pattern\\ affect maintainability as measured by DCS, DIT and CBO?}
+
+
+% author names and affiliations
+% use a multiple column layout for up to three different
+% affiliations
+\author{\IEEEauthorblockN{Viktor Holmgren}
+\IEEEauthorblockA{
+    Link\"oping University\\
+    Link\"oping, Sweden\\
+    Email: vikho394@student.liu.se}
+}
+
+
+% make the title area
+\maketitle
+
+% As a general rule, do not put math, special symbols or citations
+% in the abstract
+\begin{abstract}
+    In this paper the implementation of the Adapter design pattern in two different languages: Rust and Java is compared with a focus on maintainability.
+    More specifically this paper seeks to find how the Trait paradigm in Rust, which has no concept of classes nor inheritance, affects the implementation of a traditional object oriented design pattern.
+    In this paper three major conclusions is drawn from the results.
+    First, that the different implementations only differ marginally in terms of the software metrics used.
+    Second, that the language constructs in Rust, specifically \emph{Traits}, has some decisive advantages to the traditional object oriented model in Java.
+    Third, that traditional software metrics as used here are problematic when comparing languages which differ considerably in the paradigms they support.
+\end{abstract}
+
+% no keywords
+
+% For peer review papers, you can put extra information on the cover
+% page as needed:
+% \ifCLASSOPTIONpeerreview
+% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
+% \fi
+%
+% For peerreview papers, this IEEEtran command inserts a page break and
+% creates the second title. It will be ignored for other modes.
+\IEEEpeerreviewmaketitle
+
+
+\section{Introduction}
+As software systems grows, so does the need for appropriate design which allows for easy maintenance of existing code, and the flexibility to extend the code base with new features.
+Over the years similar problems have been met by different people, and different solutions have been implemented to varying degrees of success.
+Those solutions which have have stuck around and have been codified, are often referred to as, \emph{design patterns}.
+The result of a design pattern implementation depends on a number of different factors, not least the language features which are used for its implementation.
+
+The most common types of design patterns revolve around the Object oriented paradigm (\emph{OOP}).
+That is not surprising since the OOP paradigm sees extremely wide spread usage, with many of the most popular languages around use it as their main paradigm, only differing in the details.
+One question one may ask one self is how the gain of using these patterns is impacted when implemented in a language which lacks any traditional OOP language constructs, such as inheritance or even classes?
+Is it simply the case that these languages provide similar functionality only with a different facade?
+Does the different language constructs result in a somewhat different structure and behavior but with the same result?
+Or does the pattern as such have no real equivalent, perhaps that language removes the need for some patterns entirely?
+
+This paper will examine how the implementation of the Adapter design pattern is affected by being implemented in the Rust by comparing it to Java.
+The focus in the comparison will be on the maintainability of the source code as measured by a number of different software quality metrics: Design size in Classes (\emph{DCS}), Depth of Inheritance tree (\emph{DIT}) and Coupling between Objects (\emph{CBO}). 
+As Rust is not traditionally a OOP language some interpretations will have to be done to translate them appropriately. 
+See \autoref{sub:software_metrics} for details.
+
+\section{Background}
+%TODO: Flesh out background
+
+\subsection{Software Metrics}
+\label{sub:software_metrics}
+
+\subsection{Adapter Design Pattern}
+\label{sub:adapter_design_pattern}
+
+\subsection{Rust}
+\label{sub:rust}
+The Rust programming language is a relatively new language.
+It was started back in 2006 by Gradon Hoare.
+Since then the project has been primarily backed by the Mozilla Foundation~\cite{rustorg2017:faq}.
+Rust is a system level programming aimed at performance critical systems.
+It's main feature it boosts is that it guarantees memory safety without overhead, even over multiple threads~\cite{matsakis:2014:rustlang}.
+Otherwise the language tries to solve problems where languages like C++ currently are most common.
+
+\subsubsection{Traits}
+\label{ssub:traits}
+Traits is the main way to express abstractions in Rust, and on the surface they are very similar to what would be called an \emph{Interface} in most other languages.
+Similar to interfaces they allow the programmer to declare methods with arguments and return values for yet to be implemented types.
+Those types when they are later created must implement methods with the given signature to satisfy the interface. 
+There are however some key differences between traits and interfaces~\cite{rustblog2015:traits}:
+
+\begin{itemize}
+    \item 
+        Traits can not only require methods to be implemented, but can also provide default implementations. This allows Traits to fill a role similar to abstract classes.
+    \item 
+        Traits can not only be implemented for new user level types, but also for existing types as the Trait implementation is completely separate from the type declaration.
+    \item 
+        Traits can both be statically and dynamically dispatched.
+        Static dispatch is done by the use of generics which results in zero abstraction overhead.
+        Dynamic dispatch is done by the use of unsized references, i.e a \emph{Box}.
+        This allows dispatch at run-time, good for when indirection is really needed.
+        See \autoref{ssub:polymorphism} for details on how this is done.
+\end{itemize}
+See \autoref{fig:trait-example} for an example of Traits in Rust.
+
+\begin{figure}[ht]
+    \centering
+\begin{lstlisting}[language=C++,showstringspaces=false]
+trait Animal {
+    // Instance method signatures; to be implemented by concrete types.
+    fn noise(&self) -> &'static str;
+
+    // Traits can provide default method definitions.
+    fn what_does_it_say(&self) {
+        println!("I go {}!", self.noise());
+    }
+}
+
+// New struct/type
+struct Sheep {}
+
+// Implement concrete methods on Sheep type
+impl Sheep {
+    fn name(&self) -> &'static str {
+        "Dolly"
+    }
+}
+
+impl Animal for Sheep {
+    // Concrete implementation of noise
+    fn noise(&self) -> &'static str {
+        "baaaaah!"
+    }
+}
+\end{lstlisting}
+\caption{Trait syntax in Rust}
+\label{fig:trait-example}
+\end{figure}
+
+\subsubsection{Polymorphism}
+\label{ssub:polymorphism}
+
+\section{Implementation}
+TODO: The implementation goes here.
+
+\subsection{Java}
+\label{sub:impl_java}
+
+\subsection{Rust}
+\label{sub:impl_rust}
+
+
+\section{Results}
+TODO: The results goes here.
+
+\section{Discussion}
+TODO: The discussion goes here.
+
+
+\section{Conclusion}
+TODO: The conclusion goes here.
+
+% trigger a \newpage just before the given reference
+% number - used to balance the columns on the last page
+% adjust value as needed - may need to be readjusted if
+% the document is modified later
+%\IEEEtriggeratref{8}
+% The "triggered" command can be changed if desired:
+%\IEEEtriggercmd{\enlargethispage{-5in}}
+
+% references section
+
+% can use a bibliography generated by BibTeX as a .bbl file
+% BibTeX documentation can be easily obtained at:
+% http://mirror.ctan.org/biblio/bibtex/contrib/doc/
+% The IEEEtran BibTeX style support page is at:
+% http://www.michaelshell.org/tex/ieeetran/bibtex/
+%\bibliographystyle{IEEEtran}
+% argument is your BibTeX string definitions and bibliography database(s)
+%\bibliography{IEEEabrv,../bib/paper}
+%
+% <OR> manually copy in the resultant .bbl file
+% set second argument of \begin to the number of references
+% (used to reserve space for the reference number labels box)
+%\begin{thebibliography}{1}
+%
+%\bibliographystyle{./IEEEtran}
+\bibliographystyle{IEEEtranN}
+\bibliography{./IEEEabrv,./references}
+
+
+
+
+% that's all folks
+\end{document}
+
+
