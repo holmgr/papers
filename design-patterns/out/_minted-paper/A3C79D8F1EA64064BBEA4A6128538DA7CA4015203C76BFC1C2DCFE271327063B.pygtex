@@ -1,0 +1,29 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{l+s+sd}{/// Builder to create a Process instance}
+\PYG{k}{pub}\PYG{+w}{ }\PYG{k}{struct} \PYG{n+nc}{Command}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n}{program}: \PYG{k+kp}{\PYGZam{}}\PYG{k+kt}{str}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{args}: \PYG{n+nb}{Vec}\PYG{o}{\PYGZlt{}\PYGZam{}}\PYG{k+kt}{str}\PYG{o}{\PYGZgt{}}\PYG{p}{,}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k}{impl}\PYG{+w}{ }\PYG{n}{Command}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{l+s+sd}{/// Constructor, set default values}
+\PYG{+w}{    }\PYG{k}{pub}\PYG{+w}{ }\PYG{k}{fn} \PYG{n+nf}{new}\PYG{p}{(}\PYG{n}{program}: \PYG{k+kp}{\PYGZam{}}\PYG{k+kt}{str}\PYG{p}{)}\PYG{+w}{ }\PYGZhy{}\PYGZgt{} \PYG{n+nc}{Command}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{Command}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{n}{program}: \PYG{n+nc}{program}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n}{args}: \PYG{n+nb}{Vec}::\PYG{n}{new}\PYG{p}{()}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+
+\PYG{+w}{    }\PYG{l+s+sd}{/// Add an argument to pass to the program.}
+\PYG{+w}{    }\PYG{k}{pub}\PYG{+w}{ }\PYG{k}{fn} \PYG{n+nf}{arg}\PYG{o}{\PYGZlt{}}\PYG{n+na}{\PYGZsq{}a}\PYG{o}{\PYGZgt{}}\PYG{p}{(}\PYG{o}{\PYGZam{}}\PYG{n+na}{\PYGZsq{}a}\PYG{+w}{ }\PYG{k}{mut}\PYG{+w}{ }\PYG{n+nb+bp}{self}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{arg}: \PYG{k+kp}{\PYGZam{}}\PYG{k+kt}{str}\PYG{p}{)}\PYG{+w}{ }\PYGZhy{}\PYGZgt{} \PYG{k+kp}{\PYGZam{}}\PYG{n+na}{\PYGZsq{}a}\PYG{+w}{ }\PYG{k}{mut}\PYG{+w}{ }\PYG{n}{Command}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n+nb+bp}{self}\PYG{p}{.}\PYG{n}{args}\PYG{p}{.}\PYG{n}{push}\PYG{p}{(}\PYG{n}{arg}\PYG{p}{);}
+\PYG{+w}{        }\PYG{n+nb+bp}{self}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+
+\PYG{+w}{    }\PYG{l+s+sd}{/// Executes the command as a child process, which is returned.}
+\PYG{+w}{    }\PYG{l+s+sd}{/// Actually builds the instance}
+\PYG{+w}{    }\PYG{k}{pub}\PYG{+w}{ }\PYG{k}{fn} \PYG{n+nf}{spawn}\PYG{p}{(}\PYG{o}{\PYGZam{}}\PYG{n+nb+bp}{self}\PYG{p}{)}\PYG{+w}{ }\PYGZhy{}\PYGZgt{} \PYG{n+nc}{IoResult}\PYG{o}{\PYGZlt{}}\PYG{n}{Process}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{p}{...}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

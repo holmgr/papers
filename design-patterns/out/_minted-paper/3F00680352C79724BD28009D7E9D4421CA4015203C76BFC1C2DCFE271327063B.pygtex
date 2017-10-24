@@ -1,0 +1,21 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{l+s+sd}{/// Legacy component to be adapted}
+\PYG{k}{pub}\PYG{+w}{ }\PYG{k}{struct} \PYG{n+nc}{Rectangle}\PYG{p}{;}
+\PYG{k}{impl}\PYG{+w}{ }\PYG{n}{Rectangle}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k}{fn} \PYG{n+nf}{display}\PYG{p}{(}\PYG{o}{\PYGZam{}}\PYG{n+nb+bp}{self}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{x}: \PYG{k+kt}{i32}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{y}: \PYG{k+kt}{i32}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{w}: \PYG{k+kt}{i32}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{h}: \PYG{k+kt}{i32}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{println}\PYG{o}{!}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Show rectangle at \PYGZob{}\PYGZcb{},\PYGZob{}\PYGZcb{} with dimensions: \PYGZob{}\PYGZcb{}, \PYGZob{}\PYGZcb{}\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{x}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{y}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{w}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{h}\PYG{p}{);}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{l+s+sd}{/// User facing interface to be used}
+\PYG{k}{trait}\PYG{+w}{ }\PYG{n}{Shape}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k}{fn} \PYG{n+nf}{display}\PYG{p}{(}\PYG{o}{\PYGZam{}}\PYG{n+nb+bp}{self}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{x1}: \PYG{k+kt}{i32}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{y1}: \PYG{k+kt}{i32}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{x2}: \PYG{k+kt}{i32}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{y2}: \PYG{k+kt}{i32}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{l+s+sd}{/// Append trait implementation}
+\PYG{k}{impl}\PYG{+w}{ }\PYG{n}{Shape}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{n}{Rectangle}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k}{fn} \PYG{n+nf}{display}\PYG{p}{(}\PYG{o}{\PYGZam{}}\PYG{n+nb+bp}{self}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{x1}: \PYG{k+kt}{i32}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{y1}: \PYG{k+kt}{i32}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{x2}: \PYG{k+kt}{i32}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{y2}: \PYG{k+kt}{i32}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{Rectangle}::\PYG{n}{display}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{x1}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{y1}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{x2}\PYG{o}{\PYGZhy{}}\PYG{n}{x1}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{y2}\PYG{o}{\PYGZhy{}}\PYG{n}{y1}\PYG{p}{);}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

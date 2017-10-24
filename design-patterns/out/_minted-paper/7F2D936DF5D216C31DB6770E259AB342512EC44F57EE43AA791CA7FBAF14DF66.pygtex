@@ -1,0 +1,24 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{interface} \PYG{n+nc}{Shape} \PYG{o}{\PYGZob{}}
+    \PYG{k+kt}{void} \PYG{n+nf}{display}\PYG{o}{(}\PYG{k+kt}{int} \PYG{n}{x1}\PYG{o}{,} \PYG{k+kt}{int} \PYG{n}{y1}\PYG{o}{,} \PYG{k+kt}{int} \PYG{n}{x2}\PYG{o}{,} \PYG{k+kt}{int} \PYG{n}{y2}\PYG{o}{);}
+\PYG{o}{\PYGZcb{}}
+
+\PYG{k+kd}{class} \PYG{n+nc}{Rectangle} \PYG{o}{\PYGZob{}}
+    \PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{draw}\PYG{o}{(}\PYG{k+kt}{int} \PYG{n}{x}\PYG{o}{,} \PYG{k+kt}{int} \PYG{n}{y}\PYG{o}{,} \PYG{k+kt}{int} \PYG{n}{w}\PYG{o}{,} \PYG{k+kt}{int} \PYG{n}{h}\PYG{o}{)} \PYG{o}{\PYGZob{}}
+        \PYG{n}{System}\PYG{o}{.}\PYG{n+na}{out}\PYG{o}{.}\PYG{n+na}{println}\PYG{o}{(}\PYG{l+s}{\PYGZdq{}Show rectangle at \PYGZdq{}} \PYG{o}{+} \PYG{n}{x} \PYG{o}{+} \PYG{l+s}{\PYGZdq{}, \PYGZdq{}} \PYG{o}{+} \PYG{n}{y} \PYG{o}{+} \PYG{l+s}{\PYGZdq{} with dimensions: \PYGZdq{}} \PYG{o}{+} \PYG{n}{w} \PYG{o}{+} \PYG{l+s}{\PYGZdq{}, \PYGZdq{}} \PYG{o}{+} \PYG{n}{h}\PYG{o}{);}
+    \PYG{o}{\PYGZcb{}}
+\PYG{o}{\PYGZcb{}}
+
+\PYG{k+kd}{class} \PYG{n+nc}{RectangleAdapter} \PYG{k+kd}{implements} \PYG{n}{Shape} \PYG{o}{\PYGZob{}}
+    \PYG{k+kd}{private} \PYG{n}{Rectangle} \PYG{n}{adaptee}\PYG{o}{;}
+
+    \PYG{k+kd}{public} \PYG{n+nf}{RectangleAdapter}\PYG{o}{()} \PYG{o}{\PYGZob{}}
+        \PYG{k}{this}\PYG{o}{.}\PYG{n+na}{adaptee} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Rectangle}\PYG{o}{();}
+    \PYG{o}{\PYGZcb{}}
+
+    \PYG{n+nd}{@Override}
+    \PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{draw}\PYG{o}{(}\PYG{k+kt}{int} \PYG{n}{x1}\PYG{o}{,} \PYG{k+kt}{int} \PYG{n}{y1}\PYG{o}{,} \PYG{k+kt}{int} \PYG{n}{x2}\PYG{o}{,} \PYG{k+kt}{int} \PYG{n}{y2}\PYG{o}{)} \PYG{o}{\PYGZob{}}
+        \PYG{n}{adaptee}\PYG{o}{.}\PYG{n+na}{display}\PYG{o}{(}\PYG{n}{x1}\PYG{o}{,} \PYG{n}{y1}\PYG{o}{,} \PYG{n}{x2}\PYG{o}{\PYGZhy{}}\PYG{n}{x1}\PYG{o}{,} \PYG{n}{y2}\PYG{o}{\PYGZhy{}}\PYG{n}{y1}\PYG{o}{);}
+    \PYG{o}{\PYGZcb{}}
+\PYG{o}{\PYGZcb{}}
+\end{Verbatim}

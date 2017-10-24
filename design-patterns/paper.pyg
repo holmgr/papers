@@ -1,0 +1,36 @@
+        /// Builder to create a Process instance
+        pub struct Command {
+            program: &str,
+            args: Vec<&str>,
+            cwd: Option<&str>,
+            // etc
+        }
+
+        impl Command {
+            /// Constructor, set default values
+            pub fn new(program: &str) -> Command {
+                Command {
+                    program: program,
+                    args: Vec::new(),
+                    cwd: None,
+                }
+            }
+
+            /// Add an argument to pass to the program.
+            pub fn arg<'a>(&'a mut self, arg: &str) -> &'a mut Command {
+                self.args.push(arg);
+                self
+            }
+
+            /// Set the working directory for the child process.
+            pub fn cwd<'a>(&'a mut self, dir: &str) -> &'a mut Command {
+                self.cwd = Some(dir);
+                self
+            }
+
+            /// Executes the command as a child process, which is returned.
+            /// Actually builds the instance
+            pub fn spawn(&self) -> IoResult<Process> {
+                ...
+            }
+        }

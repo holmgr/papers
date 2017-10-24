@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2017.10.7)  20 OCT 2017 10:56
+This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2017.10.7)  24 OCT 2017 20:26
  system commands enabled.
 **paper.tex
 (./paper.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.121 seconds
+luaotfload | main : initialization completed in 0.119 seconds
 Babel <3.14> and hyphenation patterns for 1 language(s) loaded.
 (./IEEEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
@@ -844,6 +844,26 @@ LaTeX Info: Redefining \- on input line 3646.
 . Defining command \liningnums with sig. 'm' on line 3745.
 .................................................
 ))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: luatex.def on input line 99.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/luatex.def
+File: luatex.def 2017/06/24 v1.0f Graphics/color driver for luatex
+))
+\Gin@req@height=\dimen184
+\Gin@req@width=\dimen185
+)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
@@ -851,10 +871,6 @@ Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: luatex.def on input line 225.
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/luatex.def
-File: luatex.def 2017/06/24 v1.0f Graphics/color driver for luatex
-)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -865,31 +881,31 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(./paper.aux)
+(./out/paper.aux)
 \openout1 = paper.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 44.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 22.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    ... okay on input line 22.
 (load luc: /Users/holmgr/Library/texlive/2017/texmf-var/luatex-cache/generic/fon
 ts/otl/lmroman5-bold.luc)(load luc: /Users/holmgr/Library/texlive/2017/texmf-var
 /luatex-cache/generic/fonts/otl/lmroman7-italic.luc)(load luc: /Users/holmgr/Lib
@@ -907,7 +923,7 @@ s/otl/lmroman12-italic.luc)
 -- Lines per column: 56 (exact).
 \c@lstlisting=\count305
 \AtBeginShipoutBox=\box55
-Package hyperref Info: Link coloring OFF on input line 44.
+Package hyperref Info: Link coloring OFF on input line 22.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -916,9 +932,11 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count306
 )
-LaTeX Info: Redefining \ref on input line 44.
-LaTeX Info: Redefining \pageref on input line 44.
-LaTeX Info: Redefining \nameref on input line 44.
+LaTeX Info: Redefining \ref on input line 22.
+LaTeX Info: Redefining \pageref on input line 22.
+LaTeX Info: Redefining \nameref on input line 22.
+
+(./out/paper.out) (./out/paper.out)
 \@outlinefile=\write6
 
 \openout6 = paper.out
@@ -929,191 +947,208 @@ LaTeX Info: Redefining \nameref on input line 44.
 .................................................
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 44.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 44.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 44.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 44.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 44.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 44.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 44.
-LaTeX Font Info:    Redeclaring math accent \check on input line 44.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 44.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 44.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 44.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 44.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 44.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 44.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 44.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 44.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 44.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 44.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 44.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 44.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 44.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 44.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 44.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 44.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 44.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 22.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 22.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 22.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 22.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 22.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 22.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 22.
+LaTeX Font Info:    Redeclaring math accent \check on input line 22.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 22.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 22.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 22.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 22.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 44.
+(Font)              `operators' in the math version `normal' on input line 22.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 44.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 22.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 44.
+(Font)              `operators' in the math version `bold' on input line 22.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 44.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 22.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 44.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 22.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 44.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 22.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 44.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 22.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 44.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 22.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 44.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 22.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 44.
+(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 22.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/bx/it on input line 44.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/bx/it on input line 22.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 44.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 22.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 44.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 22.
 
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count307
-\scratchdimen=\dimen184
+\scratchdimen=\dimen186
 \scratchbox=\box56
 \nofMPsegments=\count308
 \nofMParguments=\count309
 \everyMPshowfont=\toks22
 \MPscratchCnt=\count310
-\MPscratchDim=\dimen185
+\MPscratchDim=\dimen187
 \MPnumerator=\count311
 \makeMPintoPDFobject=\count312
 \everyMPtoPDFconversion=\toks23
-)(load luc: /Users/holmgr/Library/texlive/2017/texmf-var/luatex-cache/generic/fo
-nts/otl/lmromancaps10-regular.luc)
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-LaTeX Warning: Reference `sub:software_metrics' on page 1 undefined on input lin
-e 118.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 43
+8.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG
+,.JBIG2,.JB2 ,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
 
+(/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
-Package natbib Warning: Citation `gamma1993:classdef' on page 1 undefined on inp
-ut line 130.
-
-
-Package natbib Warning: Citation `rustorg2017:faq' on page 1 undefined on input 
-line 150.
-
-
-Package natbib Warning: Citation `matsakis:2014:rustlang' on page 1 undefined on
- input line 152.
-
-
-Package natbib Warning: Citation `reed2015:proof' on page 1 undefined on input l
-ine 154.
-
-[1
+))(load luc: /Users/holmgr/Library/texlive/2017/texmf-var/luatex-cache/generic/f
+onts/otl/lmromancaps10-regular.luc) [1
 Non-PDF special ignored!{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updm
 ap/pdftex.map}
 
 
 ]
-
-Package natbib Warning: Citation `rustblog2015:traits' on page 2 undefined on in
-put line 161.
-
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 164.
+(Font)              <7> on input line 107.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 164.
+(Font)              <5> on input line 107.
+<images/adapter-ex.pdf, id=64, pagebox=cropbox, 487.8225pt x 176.66pt>
+File: images/adapter-ex.pdf Graphic file (type pdf)
+<use images/adapter-ex.pdf>
+Package luatex.def Info: images/adapter-ex.pdf  used on input line 137. on input
+ line 137.
+Package luatex.def Info: Requested size: 201.60077pt x 73.00792pt on input line 
+137.
+<images/template-method-ex.pdf, id=67, pagebox=cropbox, 472.76625pt x 260.975pt>
 
-LaTeX Warning: Reference `ssub:polymorphism' on page 2 undefined on input line 1
-73.
+File: images/template-method-ex.pdf Graphic file (type pdf)
+<use images/template-method-ex.pdf>
+Package luatex.def Info: images/template-method-ex.pdf  used on input line 156. 
+on input line 156.
+Package luatex.def Info: Requested size: 201.60077pt x 111.28922pt on input line
+ 156.
+ [2
+warning  (pdf backend): ignoring duplicate destination with the name 'figure.1'
 
+warning  (pdf backend): ignoring duplicate destination with the name 'figure.2'
+<./images/adapter-ex.pdf><./images/template-method-ex.pdf>]
+<images/builder-ex.pdf, id=89, pagebox=cropbox, 482.80376pt x 169.63374pt>
+File: images/builder-ex.pdf Graphic file (type pdf)
+<use images/builder-ex.pdf>
+Package luatex.def Info: images/builder-ex.pdf  used on input line 175. on input
+ line 175.
+Package luatex.def Info: Requested size: 201.60077pt x 70.83153pt on input line 
+175.
 
-LaTeX Warning: Reference `fig:dispatch-impl' on page 2 undefined on input line 1
-85.
+Underfull \hbox (badness 1496) in paragraph at lines 205--207
+[]\TU/lmr/m/it/10 Poly-mor-phism \TU/ptm/bx/it/10 is the lan-guage con-struct w
+hich al-
+ []
 
 
 \openout3 = paper.pyg
 (./out/_minted-paper/default-pyg-prefix.pygstyle)
 (./out/_minted-paper/default.pygstyle)
+(./out/_minted-paper/66C99A6FA7F7521A457D8516E4B1C61ACA4015203C76BFC1C2DCFE2713
+27063B.pygtex(load luc: /Users/holmgr/Library/texlive/2017/texmf-var/luatex-cach
+e/generic/fonts/otl/lmmono10-regular.luc)
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 2.
+(load luc: /Users/holmgr/Library/texlive/2017/texmf-var/luatex-cache/generic/fon
+ts/otl/lmmonolt10-bold.luc)(load luc: /Users/holmgr/Library/texlive/2017/texmf-v
+ar/luatex-cache/generic/fonts/otl/lmmono10-italic.luc)(load luc: /Users/holmgr/L
+ibrary/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmmono8-regular.luc
+)) [3
+warning  (pdf backend): ignoring duplicate destination with the name 'figure.3'
 
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.204     \end{minted}
-                    
-? q
-OK, entering \batchmode...
-
-\openout3 = paper.pyg
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.237     \end{minted}
-                    
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
+warning  (pdf backend): ignoring duplicate destination with the name 'figure.4'
+<./images/builder-ex.pdf>](load luc: /Users/holmgr/Library/texlive/2017/texmf-va
+r/luatex-cache/generic/fonts/otl/lmroman6-regular.luc)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 257.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 257.
 
 \openout3 = paper.pyg
 
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.268     \end{minted}
-                    
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-
+(./out/_minted-paper/3F00680352C79724BD28009D7E9D4421CA4015203C76BFC1C2DCFE2713
+27063B.pygtex)
 \openout3 = paper.pyg
 
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
+(./out/_minted-paper/51E32F3C84396981B0BF5D50FE8B1A1ACA4015203C76BFC1C2DCFE2713
+27063B.pygtex)
+\openout3 = paper.pyg
 
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.314     \end{minted}
-                    
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
+(./out/_minted-paper/A3C79D8F1EA64064BBEA4A6128538DA7CA4015203C76BFC1C2DCFE2713
+27063B.pygtex)
+\openout3 = paper.pyg
 
-No file paper.bbl.
+(./out/_minted-paper/7F2D936DF5D216C31DB6770E259AB342512EC44F57EE43AA791CA7FBAF
+14DF66.pygtex)
+\openout3 = paper.pyg
+
+(./out/_minted-paper/2B3934223082EB61041B2968DD2E4F00512EC44F57EE43AA791CA7FBAF
+14DF66.pygtex)
+\openout3 = paper.pyg
+
+(./out/_minted-paper/0651A801361AD1DE0FEBB532923A5F91512EC44F57EE43AA791CA7FBAF
+14DF66.pygtex) [4
+warning  (pdf backend): ignoring duplicate destination with the name 'table.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'table.2'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'table.3'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'figure.5'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'figure.6'
+] [5
+warning  (pdf backend): ignoring duplicate destination with the name 'figure.7'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'figure.8'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'figure.9'
+] [6
+warning  (pdf backend): ignoring duplicate destination with the name 'figure.10'
+
+] (./out/paper.bbl
+Underfull \hbox (badness 4072) in paragraph at lines 32--35
+[]\TU/ptm/bx/it/10 S. Cass. (2017) The 2017 top
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--35
+[]$\TU/ptm/bx/it/10 https://spectrum.ieee.org/computing/software/
+ []
+
+)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -1125,68 +1160,56 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 557.
+[7
 
-Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 366.
- [2
-warning  (pdf backend): ignoring duplicate destination with the name 'figure.1'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'figure.2'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'figure.3'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'figure.4'
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 366.
- (./paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 366.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 366.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 557.
+ (./out/paper.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 557.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 557.
+Package rerunfilecheck Info: File `paper.out' has not changed.
+(rerunfilecheck)             Checksum: 67922E8C757B40DCF642CE32B9FC89B9;497.
 
-Package rerunfilecheck Warning: File `paper.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `paper.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  ED8D7B450D77379F262B84D9BFEEF1ED;1070.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 366.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 557.
 )
 
 Here is how much of LuaTeX's memory you used:
- 20794 strings out of 494469
+ 21418 strings out of 494469
  125200,662416 words of node,token memory allocated
- 426 words of node memory still in use:
-   3 hlist, 1 vlist, 1 rule, 2 glue, 4 attribute, 57 glue_spec, 4 attribute_list
-, 1 write nodes
-   avail lists: 1:2,2:410,3:207,4:26,5:302,6:4884,7:1083,8:28,9:166,10:17,11:463
- 24443 multiletter control sequences out of 65536+600000
- 73 fonts using 11314863 bytes
- 38i,8n,35p,956b,332s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.ot
-f></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.ot
-f></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.
-otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmromancaps10-r
-egular.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman9
--bold.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10
--bolditalic.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmr
-oman10-regular.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/
-lmroman12-regular.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/
-lm/lmroman17-regular.otf></usr/local/texlive/2017/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmsy7.pfb>
-Output written on paper.pdf (2 pages, 53987 bytes).
+ 491 words of node memory still in use:
+   3 hlist, 1 vlist, 1 rule, 2 glue, 11 attribute, 56 glue_spec, 11 attribute_li
+st, 1 write, 7 pdf_action nodes
+   avail lists: 1:2,2:5234,3:562,4:940,5:706,6:6745,7:3116,8:377,9:1082,10:19,11
+:467
+ 24837 multiletter control sequences out of 65536+600000
+ 85 fonts using 12461023 bytes
+ 38i,11n,38p,956b,569s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmmono10-italic.otf
+></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.o
+tf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmmonolt10-bold.
+otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman8-regula
+r.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-ita
+lic.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmromancaps
+10-regular.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmro
+man9-bold.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmrom
+an10-bolditalic.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm
+/lmroman10-regular.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public
+/lm/lmroman12-regular.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/pub
+lic/lm/lmroman17-regular.otf></usr/local/texlive/2017/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy7.pfb>
+Output written on paper.pdf (7 pages, 255597 bytes).
 
-PDF statistics: 106 PDF objects out of 1000 (max. 8388607)
- 73 compressed objects within 1 object stream
- 25 named destinations out of 1000 (max. 131072)
- 1 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 279 PDF objects out of 1000 (max. 8388607)
+ 226 compressed objects within 3 object streams
+ 45 named destinations out of 1000 (max. 131072)
+ 73 words of extra memory for PDF output out of 10000 (max. 100000000)
 

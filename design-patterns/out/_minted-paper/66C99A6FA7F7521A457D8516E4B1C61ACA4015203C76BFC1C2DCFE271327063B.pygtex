@@ -1,0 +1,19 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{trait}\PYG{+w}{ }\PYG{n}{Animal}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{l+s+sd}{/// Methods to be implemented}
+\PYG{+w}{    }\PYG{k}{fn} \PYG{n+nf}{name}\PYG{p}{(}\PYG{o}{\PYGZam{}}\PYG{n+nb+bp}{self}\PYG{p}{)}\PYG{+w}{ }\PYGZhy{}\PYGZgt{} \PYG{k+kp}{\PYGZam{}}\PYG{n+nb}{\PYGZsq{}static}\PYG{+w}{ }\PYG{k+kt}{str}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k}{fn} \PYG{n+nf}{noise}\PYG{p}{(}\PYG{o}{\PYGZam{}}\PYG{n+nb+bp}{self}\PYG{p}{)}\PYG{+w}{ }\PYGZhy{}\PYGZgt{} \PYG{k+kp}{\PYGZam{}}\PYG{n+nb}{\PYGZsq{}static}\PYG{+w}{ }\PYG{k+kt}{str}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{c+c1}{// All FlyingAnimals must implement Animal, inheriting of traits}
+\PYG{k}{trait}\PYG{+w}{ }\PYG{n}{FlyingAnimal}: \PYG{n+nc}{Animal}\PYG{+w}{ }\PYG{p}{\PYGZob{}\PYGZcb{};}
+
+\PYG{l+s+sd}{/// Static dispatch: generic function, compiler will instantiate concrete functions for each caller, e.g. Sheep, Cat etc}
+\PYG{k}{fn} \PYG{n+nf}{what\PYGZus{}does\PYGZus{}it\PYGZus{}say}\PYG{o}{\PYGZlt{}}\PYG{n}{T}: \PYG{n+nc}{Animal}\PYG{o}{\PYGZgt{}}\PYG{p}{(}\PYG{n}{animal}: \PYG{k+kp}{\PYGZam{}}\PYG{n+nc}{T}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n}{println}\PYG{o}{!}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZob{}\PYGZcb{} goes \PYGZob{}\PYGZcb{}\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{animal}\PYG{p}{.}\PYG{n}{name}\PYG{p}{(),}\PYG{+w}{ }\PYG{n}{animal}\PYG{p}{.}\PYG{n}{noise}\PYG{p}{());}
+\PYG{p}{\PYGZcb{}}
+\PYG{l+s+sd}{/// Dynamic dispatch: Use Box pointer reference}
+\PYG{k}{fn} \PYG{n+nf}{what\PYGZus{}does\PYGZus{}it\PYGZus{}say2}\PYG{p}{(}\PYG{n}{animal}: \PYG{k+kp}{\PYGZam{}}\PYG{n+nb}{Box}\PYG{o}{\PYGZlt{}}\PYG{n}{Animal}\PYG{o}{\PYGZgt{}}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n}{println}\PYG{o}{!}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZob{}\PYGZcb{} goes \PYGZob{}\PYGZcb{}\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{animal}\PYG{p}{.}\PYG{n}{name}\PYG{p}{(),}\PYG{+w}{ }\PYG{n}{animal}\PYG{p}{.}\PYG{n}{noise}\PYG{p}{());}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

@@ -1,0 +1,24 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{class} \PYG{n+nc}{Command} \PYG{o}{\PYGZob{}}
+    \PYG{k+kd}{private} \PYG{n}{String} \PYG{n}{program}\PYG{o}{;}
+    \PYG{k+kd}{private} \PYG{n}{List}\PYG{o}{\PYGZlt{}}\PYG{n}{String}\PYG{o}{\PYGZgt{}} \PYG{n}{args}\PYG{o}{;}
+
+    \PYG{k+kd}{public} \PYG{n+nf}{Command}\PYG{o}{(}\PYG{n}{String} \PYG{n}{program}\PYG{o}{)} \PYG{o}{\PYGZob{}}
+        \PYG{k}{this}\PYG{o}{.}\PYG{n+na}{program} \PYG{o}{=} \PYG{n}{program}\PYG{o}{;}
+        \PYG{k}{this}\PYG{o}{.}\PYG{n+na}{args} \PYG{o}{=} \PYG{k}{new} \PYG{n}{ArrayList}\PYG{o}{\PYGZlt{}}\PYG{n}{String}\PYG{o}{\PYGZgt{}();}
+    \PYG{o}{\PYGZcb{}}
+
+    \PYG{c+c1}{// Add an argument to pass to the program.}
+    \PYG{k+kd}{public} \PYG{n}{Command} \PYG{n+nf}{arg}\PYG{o}{(}\PYG{n}{String} \PYG{n}{arg}\PYG{o}{)} \PYG{o}{\PYGZob{}}
+        \PYG{k}{this}\PYG{o}{.}\PYG{n+na}{args}\PYG{o}{.}\PYG{n+na}{add}\PYG{o}{(}\PYG{n}{arg}\PYG{o}{);}
+        \PYG{k}{return} \PYG{k}{this}\PYG{o}{;}
+    \PYG{o}{\PYGZcb{}}
+
+    \PYG{c+c1}{// Executes the command as a child process, which is returned.}
+    \PYG{c+c1}{// Actually builds the instance}
+    \PYG{k+kd}{public} \PYG{n}{Process} \PYG{n+nf}{spawn}\PYG{o}{()} \PYG{o}{\PYGZob{}}
+        \PYG{o}{...}
+    \PYG{o}{\PYGZcb{}}
+
+\PYG{o}{\PYGZcb{}}
+\end{Verbatim}

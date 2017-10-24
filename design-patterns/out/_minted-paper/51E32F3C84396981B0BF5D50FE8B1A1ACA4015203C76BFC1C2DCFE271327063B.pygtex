@@ -1,0 +1,24 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{trait}\PYG{+w}{ }\PYG{n}{Animal}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{l+s+sd}{/// Methods deferred to subtypes}
+\PYG{+w}{    }\PYG{k}{fn} \PYG{n+nf}{name}\PYG{p}{(}\PYG{o}{\PYGZam{}}\PYG{n+nb+bp}{self}\PYG{p}{)}\PYG{+w}{ }\PYGZhy{}\PYGZgt{} \PYG{k+kp}{\PYGZam{}}\PYG{n+nb}{\PYGZsq{}static}\PYG{+w}{ }\PYG{k+kt}{str}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k}{fn} \PYG{n+nf}{noise}\PYG{p}{(}\PYG{o}{\PYGZam{}}\PYG{n+nb+bp}{self}\PYG{p}{)}\PYG{+w}{ }\PYGZhy{}\PYGZgt{} \PYG{k+kp}{\PYGZam{}}\PYG{n+nb}{\PYGZsq{}static}\PYG{+w}{ }\PYG{k+kt}{str}\PYG{p}{;}
+
+\PYG{+w}{    }\PYG{c+c1}{// Trait default implementation, algorithm skeleton}
+\PYG{+w}{    }\PYG{k}{fn} \PYG{n+nf}{what\PYGZus{}does\PYGZus{}it\PYGZus{}say}\PYG{p}{(}\PYG{o}{\PYGZam{}}\PYG{n+nb+bp}{self}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{println}\PYG{o}{!}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZob{}\PYGZcb{} goes \PYGZob{}\PYGZcb{}\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nb+bp}{self}\PYG{p}{.}\PYG{n}{name}\PYG{p}{(),}\PYG{+w}{ }\PYG{n+nb+bp}{self}\PYG{p}{.}\PYG{n}{noise}\PYG{p}{());}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{l+s+sd}{/// \PYGZdq{}Subtype\PYGZdq{} Sheep, implements the Animal trait}
+\PYG{k}{struct} \PYG{n+nc}{Sheep}\PYG{p}{;}
+\PYG{k}{impl}\PYG{+w}{ }\PYG{n}{Animal}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{n}{Sheep}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k}{fn} \PYG{n+nf}{name}\PYG{p}{(}\PYG{o}{\PYGZam{}}\PYG{n+nb+bp}{self}\PYG{p}{)}\PYG{+w}{ }\PYGZhy{}\PYGZgt{} \PYG{k+kp}{\PYGZam{}}\PYG{n+nb}{\PYGZsq{}static}\PYG{+w}{ }\PYG{k+kt}{str}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{l+s}{\PYGZdq{}Sheep\PYGZdq{}}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+
+\PYG{+w}{    }\PYG{k}{fn} \PYG{n+nf}{noise}\PYG{p}{(}\PYG{o}{\PYGZam{}}\PYG{n+nb+bp}{self}\PYG{p}{)}\PYG{+w}{ }\PYGZhy{}\PYGZgt{} \PYG{k+kp}{\PYGZam{}}\PYG{n+nb}{\PYGZsq{}static}\PYG{+w}{ }\PYG{k+kt}{str}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{l+s}{\PYGZdq{}baaaaah!\PYGZdq{}}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}
